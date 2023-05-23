@@ -1,27 +1,22 @@
-variable "aws_region" {
-  description = "AWS region"
-  type        = string
-  default     = "us-east-1"
-}
 variable "db_instance_identifier" {
   description = "DB instance identifier"
   type        = string
-  default     = "my-rds-instance"
+  default     = "valefiel-rds"
 }
 variable"subnet_id1"{
-  description = "DB instance class"
+  description = "subnet_id1"
   type        = string
-  default     = "xxx"
+  default     = "subnet-0d97c628e5642eb58"
 }
 variable"subnet_id2"{
-  description = "DB instance class"
+  description = "subnet_id2"
   type        = string
-  default     = "xxx"
+  default     = "subnet-02d3d69b855809443"
 }
 variable "db_instance_class" {
   description = "DB instance class"
   type        = string
-  default     = "db.t2.medium"
+  default     = "db.m5.large"
 }
 
 variable "allocated_storage" {
@@ -33,7 +28,7 @@ variable "allocated_storage" {
 variable "database_name" {
   description = "Database name"
   type        = string
-  default     = "mydatabase"
+  default     = "valefiel-prod"
 }
 
 variable "database_username" {
@@ -45,7 +40,7 @@ variable "database_username" {
 variable "database_password" {
   description = "Database password"
   type        = string
-  default     = "mypassword"
+  default     = "jX$!d\-911-kZRZ"
 }
 
 variable "publicly_accessible" {
