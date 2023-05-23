@@ -15,14 +15,14 @@ resource "aws_db_instance" "rds_instance" {
   username                 = var.database_username
   password                 = var.database_password
   publicly_accessible      = var.publicly_accessible
-  preferred_backup_window  = "00:00-03:00" #Confirmar ventana
+  backup_window            = "00:00-03:00" #Confirmar ventana
   #skip_final_snapshot      = true
   allow_major_version_upgrade = false #Confirmar ventana
   auto_minor_version_upgrade  = false #Confirmar ventana
   deletion_protection      = true 
   multi_az                 = false
   db_subnet_group_name     = aws_db_subnet_group.rds_subnet_group.name
-  backup_retention_days    = 7 
+  backup_retention_period  = 7 
   #Confirmar con equipo
   vpc_security_group_ids   = [aws_security_group.rds_sg.id]
   tags = {
