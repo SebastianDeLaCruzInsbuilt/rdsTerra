@@ -28,7 +28,7 @@ variable "allocated_storage" {
 variable "database_name" {
   description = "Database name"
   type        = string
-  default     = "valefiel-prod"
+  default     = "valefielprod"
 }
 
 variable "database_username" {
