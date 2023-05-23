@@ -33,6 +33,7 @@ resource "aws_db_instance" "rds_instance" {
 resource "aws_security_group" "rds_sg" {
   name        = "rds-sg"
   description = "Security group for RDS"
+  vpc_id      = "vpc-0cb13b06621478c6d"
   ingress {
     from_port   = 5432
     to_port     = 5432
