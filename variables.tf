@@ -40,7 +40,7 @@ variable "database_username" {
 variable "database_password" {
   description = "Database password"
   type        = string
-  default     = "jX$!d\-911-kZRZ"
+  default     = "jX$!d-911-kZRZ"
 }
 
 variable "publicly_accessible" {
