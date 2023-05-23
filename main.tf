@@ -22,7 +22,8 @@ resource "aws_db_instance" "rds_instance" {
   deletion_protection      = true 
   multi_az                 = false
   db_subnet_group_name     = aws_db_subnet_group.rds_subnet_group.name
-  backup_retention_days    = 7 #Confirmar con equipo
+  backup_retention_days    = 7 
+  #Confirmar con equipo
   vpc_security_group_ids   = [aws_security_group.rds_sg.id]
   tags = {
     Name = var.database_name
