@@ -1,7 +1,7 @@
 variable "db_instance_identifier" {
   description = "DB instance identifier"
   type        = string
-  default     = "valefiel-rds"
+  default     = "valefielrds"
 }
 variable"subnet_id1"{
   description = "subnet_id1"
