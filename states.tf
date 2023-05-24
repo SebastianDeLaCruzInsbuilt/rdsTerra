@@ -1,6 +1,6 @@
 terraform{
     backend "s3" {
-        bucket = "states-rds-pipeline-prod3828"
+        bucket = ""
         region = "us-east-1"
         key    = "terraform.tfstate"
     }
